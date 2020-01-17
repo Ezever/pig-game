@@ -12,6 +12,7 @@ The initial commit with templates, code and images are copied from <https://gith
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 
-## New rules
+## New rules and features
 
-- A player looses his ENTIRE score when he rolls two 6 in a row without hold between them. After that, it's the next player's turn.
+- A player loses his ENTIRE score when he rolls two 6 in a row without hold between them. After that, it's the next player's turn.
+- Input field where players can set the winning score, so that they can change the predefined score of 100.

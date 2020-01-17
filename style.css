@@ -119,6 +119,21 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
 
@@ -137,7 +152,7 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 45px;}
+.btn-new { top: 80px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 
