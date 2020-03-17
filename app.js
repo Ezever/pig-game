@@ -10,7 +10,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         //2. Display the result
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'dice-' + dice + '.png';
+        diceDOM.src = 'utils/dice-' + dice + '.png';
 
         //3. Update the round score
         if (dice === 6 && lastDice === 6) {
@@ -38,7 +38,6 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         if (scores[activePlayer] > record) {
             record = scores[activePlayer];
             recordPlayer = 'Player ' + (activePlayer + 1);
-            console.log(record, recordPlayer);
         }
 
         // Check if player won the game
@@ -50,6 +49,8 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         }
 
         if (scores[activePlayer] >= winningScore) {
+            document.querySelector('.player').textContent = recordPlayer;
+            document.querySelector('.score').textContent = `Score: ` + record;
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -84,6 +85,8 @@ function init() {
     roundScore = 0;
     gamePlaying = true;
     lastDice = 0;
+    recordPlayer = '';
+    record = 0
     
     document.querySelector('.dice').style.display = 'none';
 

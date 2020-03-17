@@ -28,9 +28,11 @@ body {
 
 .wrapper {
     width: 1000px;
-    position: absolute;
+    height: 590px;
+    position: relative;
     top: 50%;
     left: 50%;
+    margin-bottom: 20px;
     transform: translate(-50%, -50%);
     background-color: #fff;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
@@ -58,8 +60,9 @@ body {
     letter-spacing: 2px;
     font-weight: 100;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     position: relative;
+    bottom: 20%;
 }
 
 .player-score {
@@ -67,7 +70,7 @@ body {
     font-size: 80px;
     font-weight: 100;
     color: #EB4D4D;
-    margin-bottom: 130px;
+    margin-top: -70px;
 }
 
 .active { background-color: #f7f7f7; }
@@ -90,6 +93,7 @@ body {
     margin: 0 auto;
     padding: 12px;
     text-align: center;
+    margin-top: 80px;
 }
 
 .player-current-label {
@@ -119,20 +123,36 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.panel {
+    display: flex;
+    justify-content: center;
+}
+
 .final-score {
-    position: absolute;
-    left: 50%;
+    position: relative;
+    top: 20px;
+    left: 120px;
+    padding: 10px;
     transform: translateX(-50%);
-    top: 10px;
     color: #555;
     font-size: 18px;
     font-family: 'Lato';
     text-align: center;
-    padding: 10px;
     width: 160px;
+    height: 40px;
     text-transform: uppercase;
 }
 
+.record {
+    top: 20px;
+    left: 15%;
+    position: relative;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+}
 
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
@@ -152,14 +172,14 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 80px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
+.btn-new { top: 12%;}
+.btn-roll { top: 55%;}
+.btn-hold { top: 62%;}
 
 .dice {
     position: absolute;
     left: 50%;
-    top: 178px;
+    top: 30%;
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
