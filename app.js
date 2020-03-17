@@ -1,4 +1,4 @@
-var scores, roundScore, activePlayer, gamePlaying, lastDice;
+var scores, roundScore, activePlayer, gamePlaying, lastDice, record = 0, recordPlayer;
 
 init();
 
@@ -35,6 +35,11 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
         // Update the UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+        if (scores[activePlayer] > record) {
+            record = scores[activePlayer];
+            recordPlayer = 'Player ' + (activePlayer + 1);
+            console.log(record, recordPlayer);
+        }
 
         // Check if player won the game
         var input = parseInt(document.querySelector('.final-score').value, 10);
