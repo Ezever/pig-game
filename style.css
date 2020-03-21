@@ -53,18 +53,6 @@ body {
 *** PLAYERS
 **********************************************/
 
-.player-name {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    position: relative;
-    bottom: 20%;
-}
-
 .player-score {
     text-align: center;
     font-size: 80px;
@@ -81,7 +69,8 @@ body {
     font-size: 47px;
     position: absolute;
     color: #EB4D4D;
-    top: -7px;
+    top: -2px;
+    left: 65%;
     right: 10px;
     
 }
@@ -129,9 +118,9 @@ button {
 }
 
 .final-score {
-    position: relative;
+    position: absolute;
     top: 20px;
-    left: 120px;
+    left: 50%;
     padding: 10px;
     transform: translateX(-50%);
     color: #555;
@@ -145,7 +134,7 @@ button {
 
 .record {
     top: 20px;
-    left: 15%;
+    left: 25%;
     position: relative;
     text-transform: uppercase;
     color: #555;
@@ -185,5 +174,26 @@ i {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.win {
+    font-size: 24pt;
+    color: #EB4D4D;
+    position: relative;
+    left: 22%;
+    margin-top: 10px;
+}
+
+.player-name input {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    margin: 15px 5px 50px 5px;
+}
+
+.player-name {
+    position: relative;
+    bottom: 15%;
+    left: 9%;
+}
